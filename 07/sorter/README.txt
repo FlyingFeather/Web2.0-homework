@@ -1,0 +1,10 @@
+神秘的一行代码
+UpOrDownorder = 0;$("tr").click(function (event) {var rows = document.getElementsByTagName("table")[0].rows;var temp;for (var i = 0; i < rows[0].cells.length; i++) {if (rows[0].cells[i].innerHTML == event.target.innerHTML) {var sorterUp;for (var j = 1; j < rows.length; j++) {sorterUp = rows[j];for (var k = j+1; k < rows.length; k++) {if (UpOrDownorder == 0 || UpOrDownorder == -1) {if (parseInt(rows[k].cells[i].innerHTML) < parseInt(sorterUp.cells[i].innerHTML)) sorterUp = rows[k];} else {if (parseInt(rows[k].cells[i].innerHTML) > parseInt(sorterUp.cells[i].innerHTML)) sorterUp = rows[k];}}temp = sorterUp.innerHTML;sorterUp.innerHTML = rows[j].innerHTML;rows[j].innerHTML = temp;}if (UpOrDownorder == 1) UpOrDownorder = -1;else UpOrDownorder = 1;}}});
+
+
+可排序的网页网址：
+http://soj.sysu.edu.cn/courses.php
+https://group.cnblogs.com/
+http://club.news.sohu.com/minjian/threads/p1?type=all&order=ctime
+http://soj.sysu.edu.cn/ranklist.php
+http://soj.sysu.edu.cn/contests.php

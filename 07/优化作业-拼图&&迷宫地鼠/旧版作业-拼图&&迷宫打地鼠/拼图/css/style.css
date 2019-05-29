@@ -1,0 +1,181 @@
+body {
+	font-family: "楷体", "Helvetica", "Arial", sans-serif;
+	font-size: 18px;
+}
+/*总的页面布局*/
+#container {
+	width: 1200px;
+	height: 850px;
+	margin: auto;
+	position: relative;
+}
+#container h1 {
+	text-align: center;
+	text-shadow: 0 1px 0 #ccc,
+				0 2px 0 #c9c9c9,
+				0 3px 0 #bbb,
+				0 4px 0 #b9b9b9,
+				0 5px 0 #aaa,
+				0 6px 1px rgba(0,0,0,.1),
+				0 0 5px rgba(0,0,0,.1),
+				0 1px 3px rgba(0,0,0,.3),
+				0 3px 5px rgba(0,0,0,.2),
+				0 5px 10px rgba(0,0,0,.25),
+				0 10px 10px rgba(0,0,0,.2),
+				0 20px 20px rgba(0,0,0,.15);
+}
+
+/*开始键*/
+#restart {
+	position: relative;
+	left: 380px;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100px;
+	height: 40px;
+	outline:none;
+	text-shadow: rgba(255,255,255,.5) 0 -1px 0, rgba(0,0,0,0.18) 0 .18em .15em;
+	color: hsl(208, 50%, 40%) !important;
+	background-color: hsl(208, 100%, 75%);
+	border-top-color: rgba(255,255,255,0.5);
+	-webkit-border-radius: 1.6em 1.6em 1em 1em / 4em 4em 1em 1em;
+	-moz-border-radius: 1.6em 1.6em 1em 1em / 4em 4em 1em 1em;
+	border-radius: 1.6em 1.6em 1em 1em / 4em 4em 1em 1em;
+	box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+}
+
+/*---------------拼图----------------*/
+.changepic {
+	outline: none;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	left: 450px;
+	margin: 10px;
+	width: 80px;
+	height: 40px;
+	color: hsl(208, 50%, 40%) !important;
+    background-color: hsl(208, 100%, 75%);
+    display: inline-block;
+    box-shadow: 3px 3px 10px black;
+	cursor: pointer;
+	border-radius: 1.6em 1em 1em 1.6em / 1.6em 1em 1em 1.6em;
+}
+.changepic:hover {
+	transform: scale(1.05);
+	transition: all 0.5s;
+}
+#puzzle-pane {
+	margin-left: 300px;
+	width: 750px;
+	height: 685px;
+	margin-top: 40px;
+}
+#puzzle-pane div {
+	display: inline-block;
+	width: 165px;
+	height: 165px;
+	float: left;
+	overflow: hidden;
+	border: 1px solid #B8B8B8;
+}
+/*---------------------------------------------------------------*/
+
+/*--------------拼图图片-----------------*/
+#container .background1 {
+	background-image: url("../images/6.jpg");
+}
+#container .background2 {
+	background-image: url("../images/7.jpg");
+}
+#container .background3 {
+	background-image: url("../images/5.jpg");
+}
+#pic1, #pic2, #pic3 {
+	float: left;
+	width: 200px;
+	height: 200px;
+	transition: all 0.8s;
+}
+#pic2 {
+	position: absolute;
+	top: 320px;
+}
+#pic3 {
+	position: absolute;
+	top: 560px;
+}
+#container img:hover {
+	transform: scale(1.05);
+}
+#puzzle-pane div:hover {
+	transform: scale(1.05);
+	transition: all 0.5s;
+}
+
+/*-------------小图片位置----------------*/
+.position0 {
+	background-position: -0px -0px;
+}
+.position1 {
+	background-position: -165px -0px;
+}
+.position2 {
+	background-position: -330px -0px;
+}
+.position3 {
+	background-position: -495px -0px;
+}
+.position4 {
+	background-position: -0px -165px;
+}
+.position5 {
+	background-position: -165px -165px;
+}
+.position6 {
+	background-position: -330px -165px;
+}
+.position7 {
+	background-position: -495px -165px;
+}
+.position8 {
+	background-position: -0px -330px;
+}
+.position9 {
+	background-position: -165px -330px;
+}
+.positio10 {
+	background-position: -330px -330px;
+}
+.positio11 {
+	background-position: -495px -330px;
+}
+.positio12 {
+	background-position: -0px -495px;
+}
+.positio13 {
+	background-position: -165px -495px;
+}
+.positio14 {
+	background-position: -330px -495px;
+}
+.position15 {
+	background-position: -495px -495px;
+}
+
+/*--------左边图片可见与否-----------*/
+.notdisplay {
+	opacity: 0;
+	transition: all 0.8s;
+}
+.display {
+	opacity: 1;
+	transition: all 0.8s;
+}
+#stepnumber {
+	float: right;
+	position: relative;
+	top: -450px;
+	font-size: 28px;
+}

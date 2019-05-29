@@ -1,0 +1,84 @@
+body {
+	background: url("../images/back.jpg");
+	font-size: 15pt;
+	font-family: "楷体", sans-serif;
+}
+/*-----------------计算器框架--------------------------------*/
+.container{
+	width:370px;
+	height: 470px;
+	margin:100px auto;
+	background:#1c3b58;
+	border-top-left-radius: 80%25px;
+	border-top-right-radius: 80%25px;
+	border-bottom-left-radius: 80%25px;
+	border-bottom-right-radius: 80%25px;
+	-webkit-box-shadow: inset 5px 10px 10px -5px #0b2642,
+						inset -5px 0 10px -5px #0b2642,
+						inset 0px -5px 10px -2px #0b2642,
+						0 0 1px 2px #0b2642,
+						0 10px 20px 0 #0b2642;
+	margin-top: 20px;
+}
+/*-----------------------------------------------------------*/
+
+/*---------------标题（简单计算器）---------------------------*/
+.middlehead {
+	text-align: center;
+	margin-top:150px;
+	color: #224062;
+	text-shadow: 1px 1px 3px #666666,
+				-1px -1px 3px #FFFFFF;
+}
+/*-----------------------------------------------------------*/
+
+/*---------------------计算器输入输出框------------------------*/
+.text {
+	width:320px;
+	border:1px solid #c2c2c2;
+	height:40px;
+	border-radius:5px;
+	margin:10px 20px 30px 20px;
+	font-size:28px;
+	text-align:right;
+	background:#ffffff;
+	-webkit-box-shadow: inset 5px 5px 5px -5px #0b2642,
+						inset -5px 0 10px -5px #0b2642,
+						0 0 1px 2px #0b2642,
+						0 10px 20px 0 #0b2642;
+}
+/*-----------------------------------------------------------*/
+
+/*-----------------------计算器按钮-----------------------------*/
+.buttons {
+	margin-left: 14px;
+	position:relative;
+}
+.button, .operator, .back{
+	width:70px;
+	height:50px;
+	margin:5px;
+	margin-right: 0px;
+	border:1px solid #ddd;
+	border-radius:1px;
+	font-weight:bold;
+	color:#1e395b;
+	background:#c8d9ec;
+	border-radius: 12px;
+	font-size: 24px;
+	font-family: sans-serif;
+	box-shadow: inset 5px 8px 10px -5px #0b2642, 0 0 1px 2px #0b2642;
+	-webkit-box-shadow: inset 5px 8px 10px -5px #0b2642, 0 0 1px 2px #0b2642;
+	transition: all 0.5s;
+}
+.button:hover, .operator:hover, .back:hover {
+	background:#ffe77c;
+}
+/*-----------------------------------------------------------*/
+
+div#error {
+	height: 25px;
+	color: red;
+	padding-top: 20px;
+	padding-left: 20px;
+}

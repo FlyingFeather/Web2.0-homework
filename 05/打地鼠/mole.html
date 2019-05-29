@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/mole.css"/>
+	<title>打地鼠</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Whac-a-mole</h1>
+		<p>Text you skill.How many boxes(moles) can you check(hit) in 30 seconds?</p>
+		<div class="first">
+			<button id="start" class="button">Start Game|Stop Game</button>
+			<span>Time:</span>
+			<input type="text" id="block" class="block" value="0" readonly/>
+		</div>
+		<div class="second">
+			<input id="button" class="button" value="Game Over" readonly/>
+			<span>Score:</span>
+			<input id="score" type="text" class="block" value="12" readonly/>
+		</div>
+		<hr>
+		<div id="mole-container"></div>
+		<hr>
+		<div class="style">Introductions:
+			<ol>
+				<li>Click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+				<li> 1 point per hit, minus 1 point per miss.</li>
+			</ol>
+		</div>
+	</div>
+	<script src="js/mole.js" type="text/javascript"></script>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Signin</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+<script type="text/javascript" src="/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/valid.js"></script>
+</head>
+<body>
+	<header>
+		<nav id="nav">
+			<ul>
+				<li><a title="主页" href="/">主页</a></li>
+				<% if(locals.user){ %>
+				<li><a title="登出" href="/logout" >退出</a></li>
+				<% } else { %>
+				<li><a title="登录" href="/login" >登录</a></li>
+				<li><a title="注册" href="/regist" >注册</a></li>
+				<% } %>
+			</ul>
+		</nav>
+	</header>
+	<h1><%= title %></h1>
+	<hr>
+	<p>
+		<% if (locals.success) { %>
+		<div class="err"><%= locals.success %></div>
+		<% } %>
+		<% if (locals.error) { %>
+		<div class="err"><%= locals.error %> </div>
+		<% } %>
+		<div id="container">
+			<form method="post">
+				用户名: <input id="name" type="text" name="name">
+					<p class="errorMessage">correct</p>
+				密码：<input id="password" type="password" name="password"/>
+					<p class="errorMessage">correct</p>
+				<input id="login"type="submit" value="登录"/>
+				<input id="reset"type="reset" value="重置"/>
+			</form>
+		</div>
+	</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+	font-family: "楷体", "Helvetica", "Arial", sans-serif;
+	font-size: 18px;
+}
+/*总的页面布局*/
+#container {
+	width: 1060px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*---------------拼图----------------*/
+
+#puzzle-pane {
+	position: relative;
+	/*margin-left: 300px;*/
+	width: 352px;
+	height: 352px;
+	margin: 0 auto;
+}
+#puzzle-pane div {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 88px;
+	height: 88px;
+	position: absolute;
+	overflow: hidden;
+	border: 1px solid #B7B7B7;
+	background-image: url("../images/5.jpg");
+	transition: all 0.2s;
+}
+#container .backgroundImage1 {
+	background-image: url("../images/6.jpg");
+}
+#container .backgroundImage2 {
+	background-image: url("../images/7.jpg");
+}
+#container .backgroundImage3 {
+	background-image: url("../images/5.jpg");
+}
+button {
+	margin-top: 20px;
+	font-size: 20px;
+	border: none;
+	padding: 8px 20px;
+	background-color: #4285F4;
+	color: white;
+	box-shadow: 4px 4px 5px rgb(136, 136, 136);
+	transition: all 0.2s;
+}
+button:hover, #puzzle-pane div:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+#pic1, #pic2, #pic3 {
+	float: left;
+	width: 352px;
+	height: 352px;
+	transition: all 0.8s;
+}
+#pic1 {
+	background-image: url("../images/5.jpg");
+}
+.notshow {
+	opacity: 0;
+}
+.show {
+	opacity: 1;
+}
+/*---------------------------------------------------------------*/
+#stepnumber {
+	margin-top: 15px;
+}

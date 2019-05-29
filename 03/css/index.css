@@ -1,0 +1,233 @@
+/*
+所有动画样式设置在鼠标指向或离开#button，未加厂商前缀，
+似乎老师的意思是这次不用自己加？以后会讲专门的工具。
+*/
+
+body {
+    font-weight: bold;
+    color: white;
+}
+/*-----------------------------列表------------------------------------*/
+/*消除所有ul下li所有的列表格式，控制列表与左边的距离*/
+ul li {
+    list-style-type: none;
+}
+ul {
+    padding-left: 30px;
+}
+/*---------------------------------------------------------------------*/
+
+/*------------------------------位置-----------------------------------*/
+/*控制总的位置*/
+#at-plus-container {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+}
+#bottom-positioner {
+    position: absolute;
+    bottom: 30%;
+    left: 0%;
+    transition: all 0.5s;
+}
+#button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+}
+/*-------------------------------------------------------------------------*/
+
+/*----------------------------上部大圆info-bar-----------------------------*/
+/*鼠标指向后让圆放大到原来的初始设置，并调节位置，让其可视*/
+#button:hover #info-bar {
+    top: -560%;
+    left: -170%;
+    transform: scale(1);
+    opacity: 1;
+}
+/*鼠标未指向时大圆的位置以及大小等设定，不可视*/
+#info-bar {
+    position: absolute;
+    top: -180%;
+    left: -180%;
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+    background: rgba(125, 126, 126, 1);
+    border-radius: 50%;
+    transform: scale(0.1);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+/*控制大圆内元素的位置、字体大小等*/
+.info {
+    position: relative;
+}
+.info li:first-child {
+    margin-left: 15px;
+}
+.info li:nth-child(4) {
+    float: right;
+}
+.info li:nth-child(3) {
+    float: left;
+}
+.info li:nth-child(3) span {
+    position: relative;
+    top: -8px;
+}
+.info li:nth-child(4) span{
+    position: relative;
+    top: -10px;
+}
+.page {
+    margin: auto;
+}
+.user {
+    font-size: 25px;
+}
+.comment {
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+}
+.mine {
+    width: 50%;
+    margin: 0;
+    color: #079E6E;
+    font-size: 20px;
+    margin-top: 15px;
+}
+/*-----------------------------------------------------------------------*/
+
+/*-------------------------------五个小圆--------------------------------*/
+/*鼠标未指向时的初始大小等设定，不可视，过渡过程延续0.5s*/
+#control-ring-container {
+    position: absolute;
+    right: -5%;
+    top: -10%;
+    width: 40px;
+    height: 40px;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+/*鼠标指向时让五个小圆都可视并放大*/
+#button:hover #control-ring-container {
+    transform: scale(1);
+    opacity: 1;
+}
+#control-ring {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    left: 0%;
+    padding: 0px;
+    margin: 0px;
+}
+/*--------五个小圆上的操作---------*/
+.mask {
+    position: absolute;
+    top: -50%;
+    right: -100%;
+    transition: all 0.5s linear;
+}
+#button:hover .mask {
+    top: -280%;
+    right: 280%;
+    background: url("../assets/images/nomask.png") rgba(125, 125, 125, 1) no-repeat center center;
+}
+.history {
+    position: absolute;
+    top: -50%;
+    right: -100%;
+    transition: all 0.5s linear;
+}
+/* 修改history动画*/
+#button:hover .history {
+    top: -50%;
+    right: 350%;
+    background: url("../assets/images/history.png") rgba(125, 125, 125, 1) no-repeat center center;
+}
+.message {
+    position: absolute;
+    top: -50%;
+    right: -100%;
+    transition: all 0.5s linear;
+}
+#button:hover .message {
+    position: absolute;
+    top: 170%;
+    right: 270%;
+    background: url("../assets/images/message.png") rgba(125, 125, 125, 1) no-repeat center center;
+}
+/*-----message上小红圆的操作-----*/
+#button:hover .unread {
+    background-color: red;
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+.unread {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    top: -5px;
+    opacity: 0;
+}
+/*------------------------------*/
+.setting {
+    position: absolute;
+    top: -50%;
+    right: -100%;
+    transition: all 0.5s linear;
+}
+#button:hover .setting {
+    position: absolute;
+    top: 300%;
+    right: 70%;
+    background: url("../assets/images/setting.png") rgba(125, 125, 125, 1) no-repeat center center;
+}
+.sign {
+    position: absolute;
+    top: -50%;
+    right: -100%;
+    transition: all 0.5s linear;
+}
+#button:hover .sign {
+    position: absolute;
+    top: 280%;
+    right: -170%;
+    background: url("../assets/images/signin.png") rgba(125, 125, 125, 1) no-repeat center center;
+}
+.button {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+}
+/*-------------------------------------------------------------------*/
+
+/*----------------------------开始的小圆-----------------------------*/
+/*鼠标指向后，.apb换放大换绿色@+图片，整个过渡延续0.5s*/
+#button:hover .apb {
+    background: url("../assets/images/atplus_green.png") rgba(48, 63, 159, 1) no-repeat center center;
+    background-size: 80%, 80%;
+    transform: scale(2);
+    transition: all 0.5s;
+}
+/*鼠标未指向时，.apb背景为灰色+白色@+图片，整个过渡延续0.5s，延迟0.5s*/
+.apb {
+    background: url("../assets/images/atplus_white.png") rgba(130, 130, 130, 1) no-repeat center center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-size: 80%, 80%;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+}
+/*-------------------------------------------------------------------*/

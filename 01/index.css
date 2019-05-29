@@ -1,0 +1,268 @@
+ol li {
+	font-family:Georgia, Garamond, serif;
+}
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-image: url("images/back.jpg");
+	background-attachment: fixed;
+	font-size:15px;
+	font-family:Georgia, Garamond, serif;
+	color:#a2a2a2
+}
+header {
+	background-color: #222;
+	width: 100%;
+	/*background-image: url("images/topbian");*/
+	height: 70px;
+	border-bottom: #464647 1px solid; 
+}
+header nav {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 15px;
+}
+header nav ul li {
+	line-height: 40px; 
+	display: inline;
+}
+header nav ul li a {
+	float: left;
+	font-weight: bold;
+	color : #b9b9b9;
+	display: block;
+	padding: 0 20px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+header nav ul li a:hover, #nav_current {
+	color: #fff;
+	background: rgba(20, 20, 20, 0.8);
+	box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7);
+	border-radius: 6px;
+}
+
+.bigmain {
+	line-height: 1.5;
+	border:1px #000 solid;
+	border-bottom:0px;
+	width:1000px;
+	height:1200px;
+	margin:0 auto;
+}
+
+.lan {
+	letter-spacing: 0.1em;
+	color:white;
+	font-family:Georgia, Garamond, serif;
+	font-size:30px;
+	width:886px;
+	height:64px;
+	padding-top:10px;
+	float:right;
+	padding-left:111px;
+}
+.leftblack {
+	width:36px;
+	height:169px;
+	float:left;
+	background:#000;
+}
+.rightblue {
+	width:36px;
+	height:169px;
+	float:right;
+	background:#000;
+}
+.toppho {
+	padding-right:0px;
+	float:right;
+	width:542px;
+	height:169px;
+}
+.leftdiv {
+	border-radius: 6px;
+	background-color: #222;
+	font-family: serif;
+	padding-top:25px;
+	padding-left:25px;
+	width:220px;
+	height:300px;
+	float:left;
+}
+.midmainright {
+	width:600px;
+	height:650px;
+	float:right;
+	padding-left:90px;
+}
+.control {
+	float:left;
+	width:580px;
+	height: 25px;
+}
+.content {
+	border-radius: 6px;
+	background-color: #222;
+	border:1px gray solid;
+	color: #b9b9b9;
+	line-height:18px;
+	float:left;
+	height:145px;
+	width:580px;
+	padding-left:10px;
+}
+.xiangyupic {
+	transition: 0.2s;
+	width:180px;
+	height:124px;
+	float:right;
+	padding-right:30px;
+}
+.xiangyupic:hover {
+	transform: scale(1.1, 1.1);
+    animation: blink 4s infinite;
+    cursor: pointer;
+}
+.headline {
+	color:#666;
+	font-size:15px;
+	font-family: Georgia, Garamond, serif;
+	font-weight: bold;
+	float:right;
+	width:500px;
+	height:50px;
+	line-height:50px;
+}
+.xian {
+	border-radius: 6px;
+	width:15px;
+	float:right;
+	height:740px;
+	background-color: #222;
+}
+.leftcontent {
+	width:250px;
+	float:left;
+	height:500px;
+}
+.rightcontenttitle {
+	font-weight: bold;
+	color:white;
+	font-size:18px;
+	font-family:Georgia, Garamond, serif;
+	width:230px;
+	float:right;
+	height:25px;
+}
+
+.rightlist li {
+	padding-top:5px;
+	width:230px;
+	float:right;
+	line-height:20px;
+}
+.rightlist li a:hover {
+	padding-left: 10px;
+}
+.leftdiv li {
+	color: white;
+	font-size: 19px;
+	padding-top:5px;
+	width:230px;
+	text-align: center;
+	line-height:20px;
+}
+.buttom {
+	line-height:25px;
+	text-align:center;
+	padding-top:20px;
+	background:url(images/);
+	height:64px;
+	float:right;
+	width:1000px;
+}
+/*.leftdiv a{
+	color:#000;
+	text-decoration:none;
+}*/
+.leftcontent a, .contentlist a {
+	text-decoration:none;
+	color : #b9b9b9;
+}
+.headline a {
+	color: white;
+}
+.top {
+	width: 700px;
+	float: right;
+	margin: 40px auto;
+	overflow: hidden;
+	clear: both;
+}
+.top figure {
+	display: inline-block;
+	width: 620px;
+	height: 250px;
+	position: relative;
+	float: right;
+}
+.top figcaption {
+	padding: 20px;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	background: rgba(152,152,152,.8);
+	color: white;
+	opacity: 0;
+	font-family: "楷体", sans-serif;
+	font-size: 16px;
+	-webkit-transition: opacity .65s ease-out;
+}
+.top figure:hover figcaption {
+	opacity: 1;
+}
+.top figcaption strong {
+	display: block;
+	line-height: 40px;
+}
+.leftkuang {
+	border-radius: 6px;
+	background-color: #222;
+	font-family: serif;
+	padding-top:25px;
+	padding-left:25px;
+	width:240px;
+	height:230px;
+	float:left;
+	position: relative;
+}
+
+.controlheng {
+	float:left;
+	width:240px;
+	height: 25px;
+}
+.search {
+	border-radius: 6px;
+	background-color: #222;
+	float:left;
+	width:265px;
+	height: 50px;
+}
+.search1 {
+	border-radius: 6px;
+	background-color: #222;
+	float:left;
+	width:265px;
+	height: 25px;
+}
+.con {
+	border-radius: 25px;
+	width:200px;
+	height:20px;
+	border:solid 1px #f00;
+}

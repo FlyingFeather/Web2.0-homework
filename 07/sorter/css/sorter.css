@@ -1,0 +1,42 @@
+body {
+	font-family: "Times New Roman", sans-serif;
+}
+.icon {
+	width: 16px;
+	height: 16px;
+	float: right;
+	vertical-align: middle;
+	opacity: 1;
+}
+#todo, #staff {
+	text-align: left;
+	background-color: #CDCDCD;
+}
+#todo th, #staff th {
+	background-color: #031B7D;
+	color: white;
+}
+.alternate {
+	background-color: #CDCDCD;
+}
+.selected {
+	background-color: #A4AFFC !important;
+}
+.ascend {
+	background-image: url("../images/ascend.png");
+}
+.descend {
+	background-image: url("../images/descend.png");
+}
+/*栏目奇偶行的背景色保持奇数白色、偶数浅灰色*/
+#todo tbody tr:nth-child(odd), #staff tbody tr:nth-child(odd){
+	background-color: white;
+}
+#todo tbody tr:nth-child(even), #staff tbody tr:nth-child(even) {
+	background-color: #DDDDDD;
+}
+thead tr th {
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}

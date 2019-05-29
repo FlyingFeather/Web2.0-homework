@@ -1,0 +1,75 @@
+body {
+	font-family: "Times New Roman", serif;
+	background: url("../images/6.jpg");
+}
+.container {
+	position: relative;
+	top: 120px;
+	margin: auto;
+	width: 1400px;
+	height: 500px;
+}
+/*-----------标题样式------------*/
+.style {
+	font-size: 38px;
+	text-shadow: 0 1px 0 #ccc,
+				0 2px 0 #c9c9c9,
+				0 3px 0 #bbb,
+				0 4px 0 #b9b9b9,
+				0 5px 0 #aaa,
+				0 6px 1px rgba(0,0,0,.1),
+				0 0 5px rgba(0,0,0,.1),
+				0 1px 3px rgba(0,0,0,.3),
+				0 3px 5px rgba(0,0,0,.2),
+				0 5px 10px rgba(0,0,0,.25),
+				0 10px 10px rgba(0,0,0,.2),
+				0 20px 20px rgba(0,0,0,.15);
+	text-align: center;
+}
+.pic {
+	width: 380px;
+	height: 350px;
+}
+.container > .link {
+	width: 400px;
+	height: 300px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 80px;
+}
+.img_border img {
+	border: 10px solid #fcfafa;
+	-webkit-transform: rotateY(30deg);
+	-webkit-box-shadow: 0 3px 10px #888;
+	-webkit-transition-property: transform;
+	-webkit-perspective: 500;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-property: perspective;
+	-webkit-transition-duration: 0.5s;
+}
+.move {
+	position: relative;;
+	left: 20px;
+	border: 10px solid #fcfafa;
+	padding: 20px;
+	width: 200px;
+	height: 120px;
+	background-color: #deddcd;
+	margin: -125px 0 0 55px;
+	-moz-box-shadow: 0 20px 40px #888;
+	-webkit-box-shadow: 0 20px 40px #888;
+	-webkit-transform: translateZ(30px) rotateY(30deg);
+	-webkit-transition-property: transform, box-shadow, margin;
+	-webkit-transition-duration: 0.5s;
+}
+.img_border:hover {
+	-webkit-perspective: 5000;
+	-webkit-transform: translateZ(0px) rotateY(0deg);
+}
+.img_border {
+	float: left;
+	-webkit-perspective: 500;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-property: perspective;
+	-webkit-transition-duration: 0.5s;
+}

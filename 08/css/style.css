@@ -1,0 +1,92 @@
+body {
+	padding: 40px;
+	padding-top: 100px;
+	background-color: #F3F3F3;
+}
+
+h1 {
+	font-size: 28px;
+	text-align: center;
+}
+
+/*表单相关*/
+form div:not(.error) {
+	height: 60px;
+	margin-left: 10%;
+}
+form label {
+	display: inline-block;
+	text-align: center;
+	padding-right: 20px;
+	width: 60px;
+}
+form input {
+	width: 40%;
+	height: 30px;
+	font-size: 16px;
+}
+.email input, .phone input, .sid input, .username input {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: #fff;
+	font-family: inherit;
+	border: 1px solid #cccccc;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/*错误信息*/
+.error {
+	color: #D01919;
+	font-size: 12px;
+}
+form div.error {
+	padding: 10px;
+	display: inline-block;
+}
+
+/*下方的重置以及提交按钮*/
+div.buttons {
+	text-align: center;
+	margin-left: -5% !important;
+}
+.button:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+.submit {
+	position: relative;
+	left: 20px;
+}
+.button {
+	margin-top: 20px;
+	font-size: 18px;
+	width: 90px;
+	border: none;
+	padding: 8px 20px;
+	background-color: #4285F4;
+	color: white;
+	box-shadow: 4px 4px 5px rgb(136, 136, 136);
+	transition: all 0.2s;
+}
+.container {
+	height: 450px;
+	width: 400px;
+	margin: auto;
+	border: 2px solid #EFEFEF;
+	background-color: white !important;
+	box-shadow: 10px 10px 20px;
+}
+
+/*用户详情页面*/
+.contain {
+	height: 350px;
+	width: 300px;
+	margin: auto;
+	border: 1px solid #EFEFEF;
+	background-color: #D4E4EF !important;
+	box-shadow: 10px 10px 20px;
+}
+.contain p {
+	padding-left: 30%;
+	padding-top: 5%;
+}

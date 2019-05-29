@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Signin</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+<script type="text/javascript" src="/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/valid.js"></script>
+</head>
+<body>
+<header>
+		<nav id="nav">
+			<ul>
+				<li><a title="主页" href="/">主页</a></li>
+				<% if(locals.user){ %>
+				<li><a title="登出" href="/logout" >退出</a></li>
+				<% } else { %>
+				<li><a title="登录" href="/login" >登录</a></li>
+				<li><a title="注册" href="/regist" >注册</a></li>
+				<% } %>
+			</ul>
+		</nav>
+	</header>
+	<h1><%= title %></h1>
+	<hr>
+
+	<p>
+		<% if (locals.success) { %>
+		<div class="err"><%= locals.success %></div>
+		<% } %>
+		<% if (locals.error) { %>
+		<div class="err"><%= locals.error %> </div>
+		<% } %>
+		<div id="container">
+			<div id="info">
+				<p>晚上好，<%= name %></p>
+		 		<p>邮箱： <%= email %></p>
+				<p>学号： <%= studentid %></p>
+				<p>电话： <%= phone %></p>
+			</div>
+		</div>
+	</p>
+</body>
+</html>

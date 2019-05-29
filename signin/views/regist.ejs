@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Signin</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+<script type="text/javascript" src="/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/valid.js"></script>
+</head>
+<body>
+<header>
+		<nav id="nav">
+			<ul>
+				<li><a title="主页" href="/">主页</a></li>
+				<% if(locals.user){ %>
+				<li><a title="登出" href="/logout" >退出</a></li>
+				<% } else { %>
+				<li><a title="登录" href="/login" >登录</a></li>
+				<li><a title="注册" href="/regist" >注册</a></li>
+				<% } %>
+			</ul>
+		</nav>
+	</header>
+	<h1><%= title %></h1>
+	<hr>
+
+
+	<p>
+		<% if (locals.success) { %>
+		<div class="err"><%= locals.success %></div>
+		<% } %>
+		<% if (locals.error) { %>
+		<div class="err"><%= locals.error %> </div>
+		<% } %>
+		<form method="post" onsubmit="return isValid();">
+			<div id="container">
+				用户名: <input id="name" type="text" name="name">
+				<p class="errorMessage">right</p>
+				密码: <input id="password" type="password" name="password"/>
+				<p class="errorMessage">right</p>
+				确认密码：<input id="password-repeat" type="password" name="password-repeat"/>
+				<p class="errorMessage">right</p>
+				学号:  <input id="studentid" type="text" name="studentid">
+				<p class="errorMessage">right</p>
+				电话: <input id="phone" type="text" name="phone">
+				<p class="errorMessage">right</p>
+				邮箱: <input id="email" type="text" name="email">
+				<p class="errorMessage">right</p>
+
+				<input id="regist" type="submit" value="注册"/>
+				<input id="reset" type="reset" value="重置"/>
+			</div>
+		</form>
+	</p>
+</body>
+</html>

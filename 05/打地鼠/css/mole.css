@@ -1,0 +1,130 @@
+body {
+	font-family: "Times New Roman", "Helvetica", "Arial", sans-serif;
+	font-size: 18px;
+	background: url("../images/4.jpg");
+}
+.container {
+	position: relative;
+	margin: auto;
+	width: 780px;
+	height: 500px;
+}
+.container h1 {
+	text-align: center;
+	text-shadow: 0 1px 0 #ccc,
+				0 2px 0 #c9c9c9,
+				0 3px 0 #bbb,
+				0 4px 0 #b9b9b9,
+				0 5px 0 #aaa,
+				0 6px 1px rgba(0,0,0,.1),
+				0 0 5px rgba(0,0,0,.1),
+				0 1px 3px rgba(0,0,0,.3),
+				0 3px 5px rgba(0,0,0,.2),
+				0 5px 10px rgba(0,0,0,.25),
+				0 10px 10px rgba(0,0,0,.2),
+				0 20px 20px rgba(0,0,0,.15);
+}
+.container p {
+	text-align: center;
+}
+/*--------------地鼠--------------*/
+#mole-container {
+	margin: auto;
+	width: 240px;
+	height: 165px;
+}
+#mole-container button {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-left: 4.5px;
+	margin-right: 4.5px;
+	margin-top: 9px;
+	padding: 0px;
+	background-color: white;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border: 1px gray solid;
+	outline:none;
+}
+/*--------------------------------*/
+
+/*左边两个的位置*/
+.button {
+	height: 20px;
+	position: relative;
+	left: 250px;
+	background-color: white;
+}
+/*-----------------时间块------------*/
+/*控制Time位置*/
+.first span {
+	position: relative;
+	left: 280px;
+}
+.block {
+	width: 35px;
+	height: 18px;
+	border-radius: 1em 2em / 1em 2em;
+	background: rgba(255,255,255,0);
+}
+.first .block {
+	position: relative;
+	left: 280px;
+}
+/*-----------------开始结束样式----------------*/
+#start, #stop{
+	color: hsl(208, 50%, 40%) !important;
+	background-color: hsl(208, 100%, 75%);
+	display: inline-block;
+	text-shadow: rgba(255,255,255,.5) 0 1px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255,255,255,0) ), to( rgba(255,255,255,0.7) ));
+	box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+}
+.second .button {
+	width: 130px;
+	background: rgba(255,255,255,0);
+}
+
+/*---------------分数框----------------*/
+.second .block {
+	position: relative;
+	left: 290px;
+}
+/*控制Score位置*/
+.second span {
+	position: relative;
+	left: 290px;
+}
+/*--------------------------------------*/
+/*一二行的间距*/
+.second {
+	margin-top: 10px;
+}
+/*去除默认样式*/
+input {
+	padding: 0;
+}
+/*-------下方数字样式------------*/
+.style {
+	font-weight: bold;
+	position: relative;
+	left: 70px;
+}
+.style ol {
+	font-weight: normal;
+}
+hr {
+	width: 235px;
+	margin-bottom: 0px;
+}
+/*---------地鼠颜色-----------------*/
+.blue {
+	background-color: blue !important;
+}
+.whilte {
+	background-color: white !important;
+}
